@@ -1,11 +1,11 @@
-<ion-header class="ion-no-border">
+<ion-header no-bord>
   <ion-toolbar>
     <ion-title>Productos</ion-title> 
       <ion-buttons slot="start">
           <ion-back-button defaultHref="home" text="">
         </ion-back-button>
       </ion-buttons> 
-     <!-- <ion-title>Productos</ion-title>   -->  
+    
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
@@ -13,6 +13,7 @@
     <ion-toolbar>
       <ion-title size="large">Libros</ion-title>
     </ion-toolbar>
+    <ion-searchbar show-clear-button="always" value="Titulo, Autor o ISBN"></ion-searchbar>
   </ion-header>
   <div class="producto">
     <ion-card class="card">
