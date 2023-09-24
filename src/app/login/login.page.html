@@ -24,20 +24,28 @@
 
     
 
-    <ion-card-content>
-        <div class="wrapform">
-            <ion-item>
-                <ion-icon name="mail-outline"></ion-icon>
-                <ion-input type="text" name="email" [(ngModel)]="email" placeholder="Correo" required="">
-                </ion-input>
-            </ion-item>
 
-            <ion-item>
-                <ion-icon name="lock-closed-outline"></ion-icon>   
-                <ion-input type="password" name="password"  placeholder="**********" [(ngModel)]="password" required="">
-                </ion-input>
-            </ion-item>
-        </div>
+
+
+        <ion-card-content>
+          <form [formGroup]="formularioLogin">
+            <div class="wrapform">
+              <ion-item>
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-label position="floating">Correo</ion-label>
+                <ion-input formControlName="mail"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <ion-label position="floating">Contraseña</ion-label>
+                <ion-input formControlName="password" type="password"></ion-input>
+              </ion-item>
+            </div>
+          </form>
+    
+
+      
+
 
 
         <div class="password_forgot">
@@ -45,7 +53,7 @@
         </div>
 
         <div class="sign-btn-wrap">
-            <ion-button shape="round" fill="solid" class="sign-btn"> Entrar </ion-button>
+            <ion-button  shape="round" fill="solid" class="sign-btn"> Entrar </ion-button>
         </div>
 
         <div class="text-tag">

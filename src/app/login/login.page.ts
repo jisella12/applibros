@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  email: string = ''; //  Se Agrega la propiedad 'email' y se le da un valor inicial al campo
-  password: string = ''; 
+  formularioLogin: FormGroup;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private formBuilder: FormBuilder) {
+    this.formularioLogin = this.formBuilder.group({
+      mail: ['', Validators.required],
+      password: ['', Validators.required],
+    });
   }
 
+  ngOnInit() {}
 }
