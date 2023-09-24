@@ -9,8 +9,18 @@ ion-toolbar{
     --opacity: 0; 
 }
 
+ion-card-title{
+  margin-top: 30px;
+  font-size: 25px;
+  color: #3A5199;
+  text-align: center;
+  font-weight: bold;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 ion-content{
-    --ion-background-color: #FFEDDE; 
+    --ion-background-color: white; 
 }
 
 .wrapform{
@@ -24,18 +34,32 @@ ion-item{
     --highlight-color-focused: #647B9D; 
     --padding-start: 0; 
     --inner-padding-end:0; 
-    font-size: 15px;
+
+    font-size: 12px;
+
     ion-input{
         color: black;
+        font-size: 20px;
+
     }
 
+    ion-icon{
+        padding-right: 6px;
+        font-size: 20px;
+    }
+}
+
+ion-input:hover{
+    color: #1248a0
 }
 
 .password_forgot{
     text-align: right;
+    
     ion-button{
-        font-size: 9px ;
-
+        font-size: 15px ;
+        color: black; 
+        font-weight: bold;
     }
 }
 
@@ -44,8 +68,13 @@ ion-item{
    padding-top: 20px;
 
     .sign-btn{
-        --ion-color-primary: #FBFCFC;
-        color: black;
+        --ion-color-primary:#FBFCFC;
+        --background-activated: #e1eaf4;
+        --background-focused: #e1eaf4;
+        --background-hover: #647890; 
+        color: white;
+        border-radius: 25;
+        --background: #3A5199;
         font-weight: bold;
 
     }
@@ -56,9 +85,9 @@ ion-item{
     margin-top: 30px;
     text-align: center;
     span{
-      font-size: 13px;
-      font-weight: normal;
-      color: grey;
+      font-size: 16px;
+      font-weight: bold;
+      color: #8593AE;
     }
   }
   
@@ -66,7 +95,7 @@ ion-item{
     margin-top: 25px;
     text-align: center;
     ion-button{
-      width: 40px;
+      width: 60px;
       padding-left: 5px !important; 
     }
   }
@@ -74,4 +103,39 @@ ion-item{
   ion-card{
     --ion-background-color: transparent; 
     box-shadow: none !important;
+  }
+
+  .ion-card-footer{
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  
+
+
+    span{
+        color: lightslategray;
+        font-size: 15px;
+        font-weight: 200;
+    }
+  }
+
+  button{
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 3px;
+    color: gray;
+
+  }
+
+  button:hover{
+    color: black;
+  }
+
+  .book_portada{
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
   }
