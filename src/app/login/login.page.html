@@ -32,8 +32,8 @@
             <div class="wrapform">
               <ion-item>
                 <ion-icon name="mail-outline"></ion-icon>
-                <ion-label position="floating">Correo</ion-label>
-                <ion-input formControlName="mail"></ion-input>
+                <ion-label position="floating">Nombre</ion-label>
+                <ion-input formControlName="nombre"></ion-input>
               </ion-item>
               <ion-item>
                 <ion-icon name="lock-closed-outline"></ion-icon>
@@ -42,19 +42,16 @@
               </ion-item>
             </div>
           </form>
-    
-
-      
-
-
-
+         
         <div class="password_forgot">
-            <ion-button fill="clear" class="ion-no-padding"> ¿Olvidaste la Contraseña?</ion-button>
+            <ion-button fill="clear" class="ion-no-padding">¿Olvidaste la Contraseña?</ion-button>
         </div>
 
         <div class="sign-btn-wrap">
-            <ion-button  shape="round" fill="solid" class="sign-btn"> Entrar </ion-button>
+            <ion-button (click)="ingresar()"  [routerLink]="['/producto']" shape="round" fill="solid" class="sign-btn">Ingresar</ion-button>
         </div>
+
+    
 
         <div class="text-tag">
             <span> ¿Deseas entrar por Redes Sociales? </span>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.page.html',
@@ -13,3 +15,6 @@ export class ProductoPage implements OnInit {
   }
 
 }
+
+
+

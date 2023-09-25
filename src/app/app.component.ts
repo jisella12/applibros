@@ -1,4 +1,8 @@
+import 'ionicons'; 
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -6,6 +10,17 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(
+    public router: Router, 
+    public platform: Platform
+  ) {
+    this.routesDefault(); 
+  }
+
+  routesDefault(){
+    this.platform.ready().then(() =>{
+    this.router.navigateByUrl('/splashscreen'); 
+    })
 }
 
+}

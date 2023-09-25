@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <div class="book_portada">
-      <ion-img src="assets/imagenes/book.gif"></ion-img>
+      <ion-img src="assets/imagenes/bookverse.png"></ion-img>
   </div>
 
   </ion-toolbar>
@@ -13,21 +13,21 @@
       <ion-img src="assets/imagenes/header2.png"></ion-img>
       <ion-card-header>
         <ion-card-subtitle class="ion-text">
-          Explora un mundo de libros en la punta de tus dedos con nuestra aplicación. Encuentra los mejores libros, personaliza tu lectura y disfruta de recomendaciones hechas solo para ti. ¡Sumérgete en la magia de la lectura ahora!
+          Encuentra los mejores libros, personaliza tu lectura y disfruta de recomendaciones hechas solo para ti.
   
         </ion-card-subtitle>
         <ion-card-title>
-          LibroWorld 
+       
           
         </ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
         <div class="signin-btns">
-          <ion-button size="medium" fill="solid" shape="round" class="loginbtn">
+          <ion-button [routerLink]="['/login']" size="medium" fill="solid" shape="round" class="loginbtn">
             Entrar 
           </ion-button>
-          <ion-button size="medium" fill="outline" shape="round" color="dark" class="loginbtn">
+          <ion-button [routerLink]="['/registro']" size="medium" fill="outline" shape="round" color="dark" class="loginbtn">
             Registrarse
           </ion-button>
           
